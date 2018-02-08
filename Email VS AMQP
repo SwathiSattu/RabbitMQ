@@ -1,0 +1,14 @@
+How Does AMQP Message Brokering Differ From E-Mailing?
+
+Given that mailing consists of sending of a message (i.e. publishing), its reception and processing by the mail server 
+(i.e. brokering) to relevant mailboxes (i.e. queues) finally followed by requesting and obtaining the said message (i.e. consuming), 
+the process and the task of transferring messages defined by AMQP can be seen as similar.
+
+Besides the fundamentals actually differing quite a bit, the main thing that separates AMQP from e-mailing is the targeted Quality 
+of Service (QoS). AMQP, by its nature, strives for reliability, security, standards compliance and safety.
+
+Features such as persistence, delivery of a message to multiple consumers, possibility to ensure and prevent multiple consumption,
+and the protocol operating at high-speeds are the main factors separating the two.
+
+For business-level usage and adaption, the requirements for authentication to sending messages (i.e. publishing) to exchanges
+(and queues) means prevention of unwanted ones (such as spam), playing a key role for establishing the QoS.
