@@ -1,0 +1,4 @@
+
+rabbitmqctl list_policies
+rabbitmqctl.bat list_queues
+rabbitmqctl list_bindings
